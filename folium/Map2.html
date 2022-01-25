@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_73a9b44d13484ea69befb48f53dfebf0 {
+                #map_9a6642ea1b1744569952cf7b74269aca {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_73a9b44d13484ea69befb48f53dfebf0" ></div>
+            <div class="folium-map" id="map_9a6642ea1b1744569952cf7b74269aca" ></div>
         
 </body>
 <script>    
     
-            var map_73a9b44d13484ea69befb48f53dfebf0 = L.map(
-                "map_73a9b44d13484ea69befb48f53dfebf0",
+            var map_9a6642ea1b1744569952cf7b74269aca = L.map(
+                "map_9a6642ea1b1744569952cf7b74269aca",
                 {
-                    center: [38.58, -99.09],
+                    center: [38.0, -99.0],
                     crs: L.CRS.EPSG3857,
                     zoom: 6,
                     zoomControl: true,
@@ -55,32 +55,37 @@
 
         
     
-            var tile_layer_63618d8ebce546a6a006e0cb49521367 = L.tileLayer(
+            var tile_layer_f8393e4a725346a1ab45eeab73555fe8 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_73a9b44d13484ea69befb48f53dfebf0);
+            ).addTo(map_9a6642ea1b1744569952cf7b74269aca);
         
     
-            var marker_2221caf1288e45289d208452fbae0362 = L.marker(
-                [38.2, -99.1],
+            var feature_group_2a609e9899f24d78950dd34eedb37176 = L.featureGroup(
                 {}
-            ).addTo(map_73a9b44d13484ea69befb48f53dfebf0);
+            ).addTo(map_9a6642ea1b1744569952cf7b74269aca);
         
     
-            var icon_49f168ab7ef444afb47ee3ad7e42885f = L.AwesomeMarkers.icon(
+            var marker_914892e4456348fabf704d1a6a28cbb9 = L.marker(
+                [38.0, -99.0],
+                {}
+            ).addTo(feature_group_2a609e9899f24d78950dd34eedb37176);
+        
+    
+            var icon_5ef689d340754801bad6a2fc42cded78 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_2221caf1288e45289d208452fbae0362.setIcon(icon_49f168ab7ef444afb47ee3ad7e42885f);
+            marker_914892e4456348fabf704d1a6a28cbb9.setIcon(icon_5ef689d340754801bad6a2fc42cded78);
         
     
-        var popup_3608baea580d493b9bcfb79d56af818e = L.popup({"maxWidth": "100%"});
+        var popup_c8e10e80375d4648b7890aa503b09a56 = L.popup({"maxWidth": "100%"});
 
         
-            var html_41ba4ece17c74eb0be6c51cf36f49d84 = $(`<div id="html_41ba4ece17c74eb0be6c51cf36f49d84" style="width: 100.0%; height: 100.0%;">Hi, I am a marker</div>`)[0];
-            popup_3608baea580d493b9bcfb79d56af818e.setContent(html_41ba4ece17c74eb0be6c51cf36f49d84);
+            var html_557d1fd897014f74ba606ea3df2e5d7c = $(`<div id="html_557d1fd897014f74ba606ea3df2e5d7c" style="width: 100.0%; height: 100.0%;">Hi, I am a marker2</div>`)[0];
+            popup_c8e10e80375d4648b7890aa503b09a56.setContent(html_557d1fd897014f74ba606ea3df2e5d7c);
         
 
-        marker_2221caf1288e45289d208452fbae0362.bindPopup(popup_3608baea580d493b9bcfb79d56af818e)
+        marker_914892e4456348fabf704d1a6a28cbb9.bindPopup(popup_c8e10e80375d4648b7890aa503b09a56)
         ;
 
         
