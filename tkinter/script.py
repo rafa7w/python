@@ -1,3 +1,4 @@
+# Integrated library
 from tkinter import *
 
 window=Tk()
