@@ -1,0 +1,15 @@
+## Estrutura simples
+Usamos o while quando queremos repetir um código de forma indeterminada até uma condição se tornar verdadeira ou falsa
+
+while condição:
+    repete esse código
+
+
+venda = input("Digite o nome de um produto: ")
+vendas = []
+
+while venda != "":
+  vendas.append(venda)
+  venda = input("Digite o nome de um produto: ")
+
+print(f"As vendas cadastradas foram {vendas}")
