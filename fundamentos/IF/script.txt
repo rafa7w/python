@@ -1,0 +1,48 @@
+## Várias ações em um IF
+if condição:
+    alguma coisa
+    outra coisa
+else:
+    uma coisa
+    uma coisa mais
+
+
+## Mais de uma condição ao mesmo tempo
+if condição_1:
+    o que fazer se a condição 1 for verdadeira
+    if condição_2:
+        o que fazer se a condição 2 for verdadeira
+    else:
+        o que fazer se a condição 2 for falsa, mas a condição 1 é verdadeira
+else:
+    o que fazer se a condição 1 for falsa
+
+
+## ELIF
+if condição:
+    o que fazer se a condição 1 for verdadeira
+elif condição_2:
+    o que fazer se a condição 1 for falsa e a condição 2 for verdadeira
+else:
+    o que fazer se a condição 1 e a condição 2 forem falsas
+
+
+## Comparadores
+== igual
+!= diferente
+> maior que 
+>= maior ou igual
+< menor que
+<= menor ou igual
+in texto existe dentro de outro texto
+not verifica o contrário da comparação
+
+## Casos com várias condições / comparações
+if condição_1 and condição_2:
+    vai ser executado se as duas condições forem verdadeiras ao mesmo tempo
+
+Outro caso:
+
+if condição_1 or condição_2:
+    vai ser executado se pelo menos uma das condições forem verdadeiras 
+
