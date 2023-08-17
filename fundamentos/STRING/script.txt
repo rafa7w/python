@@ -1,0 +1,55 @@
+## Índices em String
+Para pegar um item de uma string: texto[índice]
+Pegar o tamanho de um texto: len(texto)
+
+
+## Índice negativo e pedaço de string
+ C  A  S  A
+-4 -3 -2 -1
+Para pegar um texto de trás para frente: texto[índice negativo]
+
+Para pegar o pedaço de um texto use:
+texto[:índice]  não inclui o valor do índice no retorno
+texto[índice:]  inclui o valor do índice
+texto[índice:índice]
+
+
+## Operações com string
+str = transforma número em string
+in = verifica se um texto está contido dentro do outro
+operador + = concatena strings
+format e {} = substitui valores
+%s = substitui textos
+%d = substitui números decimais
+
+
+## Métodos de String
+capitalize() => coloca a 1ª letra  maiúscula
+
+casefold() => transforma todas as letras em minúsculas (existe lower(), mas esse método é melhor normalmente)
+
+count() => quantidade de vezes que um valor aparece na string = text.count('a')
+
+startswith() => verifica se um string começa com determinado texto
+
+endswith() => verifica se o texto termina com um valor específico e dá como resposta True ou False
+
+find() => procura um texto dentro de outro texto e dá como resposta a posição do texto encontrado
+
+isalnum() => verifica se um texto é todo feito com caracteres alfanuméricos (letras e números); letras com acento ou ç são considerados letras para essa função
+
+isalpha() => verifica se um texto é todo feito de letras
+
+isnumeric() => verifica se um texto é todo feito de números
+
+replace() => substitui um texto por um outro texto = texto.replace('.', ',')
+
+split() => separa um string de acordo com um delimitador em vários textos diferentes texto.split('@')  = ['lira', 'gmail.com']
+
+splitlines() => separa um texto em vários textos de acordo com os "enters" do texto em uma lista
+
+strip() => retira caracteres indesejados dos textos. Por padrão, retira espaços "extras" no início e no final 
+
+title() => coloca a 1ª letra de cada palavra em maiúscula 
+
+upper() => coloca o texto todo em letra maiúscula
