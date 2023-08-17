@@ -1,0 +1,38 @@
+## Estrutura simples
+for i in range(n):
+    repetir código n vezes
+
+
+for i in range(len(lista)):
+    bem usado essa estrutura
+
+
+## FOR EACH
+for item in lista:
+    print(item)
+
+for ch in texto:
+    print(ch)
+
+
+## ENUMERATE
+Permite percorrer uma lista e ao mesmo tempo ter uma variável que guarda o índice daquele item
+
+for i, item in enumerate(lista):
+    resto do código
+
+
+## FOR dentro de FOR
+for item in lista:
+    código aqui
+
+    for item2 in lista2:
+        código aqui
+
+
+## Formas de interromper um FOR
+break => interrompe e finaliza o for
+
+continue => interrompe e vai para o próximo item do for
+
+
