@@ -2,3 +2,23 @@ try:
     tentar fazer
 except:
     caso dê errado
+
+
+
+try
+    tentar fazer
+except:
+    raise Exception("...")
+    ou 
+    raise ValueError("...")
+
+
+
+try:
+    tentar fazer
+except:
+    caso dê errado
+else:
+    caso não dê o erro esperado, faça isso
+finally:
+    independente do que acontecer, faça isso

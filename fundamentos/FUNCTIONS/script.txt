@@ -1,0 +1,58 @@
+## Estrututra simples
+São blocos de código que servem a um único propósito, fazer ações específicas
+
+def nome_funcao():
+    codigo
+
+
+## RETURN
+Possível armazenar em uma variável
+Uma variável dentro do bloco de código de uma função é somente válida dentro dela
+Com o return é possível recuperar essa variável para fora do bloco
+
+A função para de ser executada após um comando de return 
+
+
+Retornando mais de uma coisa:
+return (var1, var2, var3)
+
+
+## Argumentos e parâmetros
+def minha_funcao(param1, param2, param3):
+    return param1 + param2 + param3
+
+2 formas de passar o argumento:
+- Em ordem (positional argument)
+- Com o nome do argumento (keyword argument)
+
+Se começar a função passando os argumentos no método de palavras chave, o restante deve seguir esse
+modelo, caso contrário, poderá ser usado das duas maneiras
+
+
+## Valores padrão para os parâmetros
+def minha_funcao(argumento = valor_padrao):
+    ...
+    return ...
+
+
+
+## Quantidade indefinida de parâmetros
+*args para positional arguments -> argumentos vêm em formato de tupla
+
+**kwargs para keyword arguments -> argumentos vêm em formato de dicionário
+
+def preco_final(preco, **adicionais):
+    if 'desconto' in adicionais:
+      preco *= (1 - adicionais['desconto'])
+    if 'imposto' in adicionais:
+      preco *= (1 + adicionais['imposto'])
+    return preco
+
+
+## Ordem dos argumentos
+Sempre os positional arguments vêm antes e depois os keywords arguments
+Sempre os argumentos individuais vêm antes e depois os "múltiplos"
+
+def minha_funcao(arg1, *args, k = kwarg1, **kwargs):
+   ...
+        
