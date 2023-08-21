@@ -1,0 +1,27 @@
+Parece uma lista, mas é imutável 
+
+tupla = (valor, valor, valor, ...)
+
+Vantagens:
+- Mais eficiente (em termos de performance)
+- Protege a base de dados
+- Muito usado para dados heterogêneos
+
+## Acessando o valor de uma tupla
+tupla[índice]
+
+
+## Unpacking de tuplas
+Tem que ter o mesmo número de variáveis declaradas para a quantidade de valores dentro da tupla
+nome, sobrenome, cpf, email = tupla
+
+
+lista = [
+    tupla1,
+    tupla2,
+    tupla3
+]
+
+
+for item in lista: 
+    var1, var2, var3 = item
