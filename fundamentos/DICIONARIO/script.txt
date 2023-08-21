@@ -1,0 +1,68 @@
+Vantagens e Desvantagens:
+- Não devem ser usados para pegar itens em uma determinada ordem
+- Podem ter valores heterogêneos
+- Chaves são únicas obrigatoriamente (não pode ter duas com o mesmo nome)
+- Mais intuitivos de trabalhar
+
+## Estrutura simples
+dicionario = {chave: valor, chave: valor, ...}
+
+
+## Acessando valores de um dicionário
+dicionario['chave']
+ou
+dicionario.get('chave')
+
+
+## Adicionar, Remover e Modificar 
+dicionario['chave'] = valor
+ou 
+dicionario.update({chave: valor, chave: valor})
+
+
+del dicionario['chave']
+ou 
+valor = dicionario.pop('chave')
+
+
+del dicionario => exclui tudo até a variável
+
+dicionario.clear() => limpa o dicionario
+
+
+## FOR nos dicionários
+for chave in dicionario:
+    faça alguma coisa
+
+
+
+## Métodos úteis 
+Transformando um dicionário em uma lista de tuplas:
+
+itens_dicionario = dicionario.items()
+ou
+for item in dicionario.items()
+  cada item do dicionario em formato de tupla
+
+
+ 
+dicionario.keys() => uma "lista" (dict_keys) com todas as chaves do dicionario
+
+dicionario.values() => uma "lista" (dict_values) com todos os valores do dicionario
+
+
+## Transformando listas em dicionários
+Dicionário com valores padrão:
+dicionario = dict.fromkeys(lista_chaves, valor_padrao)
+
+
+Dicionário a partir de listas de tuplas:
+dicionario = dict(lista_tuplas)
+
+
+Dicionário  a partir de 2 listas:
+1. Transformar listas em lista de tuplas com o método zip
+2. Transformar em dicionario
+
+lista_tuplas = zip(lista1, lista2)
+dicionario = dict(lista_tuplas)
