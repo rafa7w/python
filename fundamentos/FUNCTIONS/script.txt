@@ -56,3 +56,35 @@ Sempre os argumentos individuais vêm antes e depois os "múltiplos"
 def minha_funcao(arg1, *args, k = kwarg1, **kwargs):
    ...
         
+
+
+## Função MAP
+O item de cada iterable será passado como argumento da função
+lista = list(map(funcao, iterable))
+
+
+
+## FUNÇÃO LAMBDA
+minha_funcao = lambda argumentos: expressao
+
+expressao é o retorno
+
+Pode ser passada para as funções de MAP e FILTER
+Um exemplo dentro de função:
+
+def calcular_imposto(imposto):
+  return lambda preco: preco * (1 + imposto)
+
+calcular_preco_produto = calcular_imposto(0.1)
+calcular_preco_servico = calcular_imposto(0.15)
+calcular_preco_royalties = calcular_imposto(0.25)
+
+print(calcular_preco_produto(100)) = 110
+print(calcular_preco_servico(100)) = 115
+print(calcular_preco_royalties(100)) = 125
+
+
+
+## FILTER
+Retorna como resposta todos os itens do iterable onde a função é True
+filter(function, iterable)
